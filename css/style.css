@@ -22,7 +22,8 @@ time, mark, audio, video {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: #b2dafa;
+	background-color: #9deffa;
+	padding-top: 80px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,14 +35,19 @@ img {
 }
 
 header {
+	position: fixed;
+	top: 0;
+
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	background-color: #b2dafa;
-	padding: 10px;
+	padding: 10px 0 10px 0;
+	background-color: #9deffa;
+	box-shadow: #b2dafa 0 5px 5px ;
 }
 
 header h1 {
-	width: 25%;
+	width: 20%;
 }
 
 header nav {
@@ -64,7 +70,7 @@ nav ul li, nav ul li a {
 
 nav ul li a {
 	text-decoration: none;
-	background-color: #a9dfcc;
+	background-color: #b2dafa;
 	color: #000;
 	line-height: 30px;
 }
@@ -86,7 +92,7 @@ main{
 
 aside{
 	width: 25%;
-	background-color: #a9dfcc;
+	background-color: #b2dafa;
 	padding: 10px;
 }
 
@@ -114,13 +120,64 @@ p{
 	margin: 10px;
 }
 
-.conteudo{
+.conteudoj{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.box{
+	width: 46%;
+	padding: 7px;
+	margin-bottom: 12px;
+	background-color: #fff;
+}
+
+.box figure{
+	height: 220px;
+	overflow: hidden;
+	border: #000 solid 1px;
+}
+
+.conteudo, .conteudoj{
 	width: 70%;
 	padding: 10px;
-	background-color:#a9dfcc ;
+	background-color:#b2dafa;
 }
 
 .ico-logo {
 	width: 40px;
 	margin-right: 20px;
+}
+
+.modal{
+	position: fixed;
+	top: 20%;
+	right: 0;
+	width: 200px;
+	padding: 10px;
+	background-color: yellow;
+	border: #f90;
+}
+.modal .fechar{
+	position: absolute;
+	right: 10px;
+	top: 4px;
+	width: 20px;
+	padding: 2px;
+	background-color: red;
+	color: #fff;
+	text-align: center;
+}
+
+#img-mae{
+	margin-top: -100px;
+}
+
+#img-ingles{
+	margin-top: -380px;
+	size: -500px;
+}
+#img-biblio{
+	margin-top: -500px;
 }
