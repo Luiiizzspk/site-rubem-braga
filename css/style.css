@@ -22,8 +22,12 @@ time, mark, audio, video {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: #9deffa;
+	background-color: #ffffff;
 	padding-top: 80px;
+	background-image: url('../imagens/mancha.png');
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: 200px 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,8 +46,8 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 0 10px 0;
-	background-color: #9deffa;
-	box-shadow: #b2dafa 0 5px 5px ;
+	background-color: #ffffff;
+	box-shadow: #b2dafa 0 5px 5px;
 }
 
 header h1 {
@@ -80,7 +84,7 @@ nav ul li a:hover {
 	color: #000;
 }
 
-main{
+main {
 	display: flex;
 	/* vh corresponde a porcentagem da tela do dispositivo, 90VH = 90% altura da tela */
 	min-height: 80vh;
@@ -90,59 +94,59 @@ main{
 	margin-top: 20px;
 }
 
-aside{
+aside {
 	width: 25%;
 	background-color: #b2dafa;
 	padding: 10px;
 }
 
-footer p{
+footer p {
 	text-align: center;
 }
 
-li,p,h1,h2,h3,h4{
+li, p, h1, h2, h3, h4 {
 	font-size: 1.2em;
 }
 
-ul{
+ul {
 	margin-left: 20px;
 	list-style-type: none;
 }
 
-main a{
+main a {
 	text-decoration: none;
 	color: rgb(29, 70, 253);
 }
 
 
 
-p{
+p {
 	margin: 10px;
 }
 
-.conteudoj{
+.conteudoj {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.box{
+.box {
 	width: 46%;
 	padding: 7px;
 	margin-bottom: 12px;
 	background-color: #fff;
 }
 
-.box figure{
+.box figure {
 	height: 220px;
 	overflow: hidden;
 	border: #000 solid 1px;
 }
 
-.conteudo, .conteudoj{
+.conteudo, .conteudoj {
 	width: 70%;
 	padding: 10px;
-	background-color:#b2dafa;
+	background-color: #b2dafa;
 }
 
 .ico-logo {
@@ -150,7 +154,7 @@ p{
 	margin-right: 20px;
 }
 
-.modal{
+.modal {
 	position: fixed;
 	top: 20%;
 	right: 0;
@@ -159,7 +163,8 @@ p{
 	background-color: yellow;
 	border: #f90;
 }
-.modal .fechar{
+
+.modal .fechar {
 	position: absolute;
 	right: 10px;
 	top: 4px;
@@ -170,14 +175,76 @@ p{
 	text-align: center;
 }
 
-#img-mae{
+/* nos desktops o menu habmurguer é oculto */
+
+.menu-hamburguer{
+	display: none;
+}
+
+.menu-phone{
+	display: none;
+}
+
+#img-mae {
 	margin-top: -100px;
 }
 
-#img-ingles{
+#img-ingles {
 	margin-top: -380px;
 	size: -500px;
 }
-#img-biblio{
+
+#img-biblio {
 	margin-top: -500px;
 }
+
+
+/* layout para Tablets e celulares */
+
+@media only screen and (max-width: 992px) {
+	main {
+		flex-direction: column-reverse;
+	}
+
+	aside, .conteudo, .conteudoj {
+		width: 100%;
+	}
+
+	nav {
+		display: none;
+	}
+
+	header h1 {
+		width: 60%;
+	}
+
+	.menu-hamburguer {
+		display: block;
+		width: 50px;
+		cursor: pointer;
+	}
+
+	.menu-phone{
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 50%;
+		padding: 10px;
+		background-color: #fff;
+		z-index: 1000;
+	}
+	.menu-phone ul{
+		padding: 0;
+		list-style: none;
+	}
+	.menu-phone ul li, .menu-phone ul li a{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		margin-bottom: 2px;
+		text-indent: 10px;
+	}
+} 
