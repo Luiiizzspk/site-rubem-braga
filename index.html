@@ -40,8 +40,8 @@
             </ul>
         </nav>
 
-        <nav class="menu-phone">
-            <div class="fechar">X</div>
+        <nav id="navPhone" class="menu-phone">
+            <div id="idX" class="fechar">X</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="biografia.html">Biografia</a></li>
@@ -52,7 +52,7 @@
             </ul>
         </nav>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="btHamburguer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="menu-hamburguer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -60,11 +60,13 @@
 
     </header>
 
-    <div class="modal">
-        <div class="fechar">X</div>
+    <div id="divModal" class="modal">
+        <div id="btFechar" class="fechar">X</div>
         <h2>NÃO PERCA </h2>
         <h4>50%off NA FEIRA DO LIVRO</h4>
     </div>
+
+    
 
     <main>
 
@@ -97,8 +99,8 @@
                 </figure>
                 <h2>Conto Aula de Inglês</h2>
                 <p>Minha tendência imediata foi responder que não; mas a gente não deve se deixar levar pelo primeiro
-                    impulso. Um rápido olhar que lancei à professora bastou para ver que ela falava com seriedade, e
-                    tinha o ar de quem propõe um grave problema.</p>
+                    impulso.
+                </p>
             </div>
             <div class="box">
                 <figure>
@@ -106,8 +108,8 @@
                 </figure>
                 <h2>Conto Como Aprendi a Escrever</h2>
                 <p>Já contei em uma crônica a primeira vez que vi meu nome em letra de forma: foi no jornalzinho "O
-                    ltapemirim", órgão oficial do Grêmio Domingos Martins, dos alunos do colégio Pedro Palácios, de
-                    Cachoeiro de Itapemirim.</p>
+                    ltapemirim"
+                </p>
             </div>
             <div class="box">
                 <figure>
@@ -120,8 +122,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2022 - Desenvolvido por Luiz Guilherme</p>
+        <p>&copy; <span id="data"></span> - Desenvolvido por Luiz Guilherme</p>
     </footer>
+
+
 
     <script src="js/code.js"></script>
 </body>
