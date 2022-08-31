@@ -6,8 +6,6 @@ const txtData = tempo.getFullYear() + ' - hora: ' + tempo.getHours() + ' minuto:
 
 // Elementos DOM
 const spanData = document.getElementById('data')
-const btFechar = document.getElementById('btFechar')
-const divModal = document.getElementById('divModal')
 const navPhone = document.getElementById('navPhone')
 const btHamburguer = document.getElementById('btHamburguer')
 const idX = document.getElementById('idX')
@@ -15,15 +13,8 @@ const idX = document.getElementById('idX')
 // Insere txtData dentro do ID "data"
 spanData.innerText = txtData
 
-
 // Ações do Usuario (eventos)
 
-// Ao clicar no id "btFechar"
-btFechar.addEventListener('click', function(){
-    // oculta o divModal - CSS display:none por JavaScript
-    divModal.style.display = 'none'
-})
-    
 btHamburguer.addEventListener('click', function(){
     navPhone.style.display = 'block'
 

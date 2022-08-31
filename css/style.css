@@ -251,11 +251,14 @@ p {
 		text-indent: 10px;
 	}
 
-	
-
-
-
-
-
+	.box{
+		width: 100%;
+	}
 
 } 
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 992px) {	
+	.box figure{
+		height: 300px;
+	}
+}
